@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медицинский центр - Запись на прием</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">МедЦентр</div>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html">Расписание врачей</a></li>
+                    <li><a href="appointment.html">Запись на прием</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container">
+            <h1>Запись на прием</h1>
+            <p>Запишитесь на прием к нашим специалистам онлайн</p>
+        </div>
+    </section>
+    
+    <!-- Основное содержимое -->
+    <main class="container">
+        <section class="section animated">
+            <h2>Онлайн запись</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="fullName">ФИО *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="doctor">Специалист *</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Выберите врача</option>
+                        <option value="therapist">Терапевт</option>
+                        <option value="pediatrician">Педиатр</option>
+                        <option value="cardiologist">Кардиолог</option>
+                        <option value="neurologist">Невролог</option>
+                        <option value="ophthalmologist">Офтальмолог</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Дата приема *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Время приема *</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Комментарий</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Записаться на прием</button>
+            </form>
+        </section>
+        
+        <section class="section medical-care animated">
+            <h2>Вызов врача на дом</h2>
+            <p>Если вы не можете посетить нашу клинику, вы можете вызвать врача на дом.</p>
+            
+            <ul>
+                <li>Квалифицированные специалисты</li>
+                <li>Выезд в течение 2 часов</li>
+                <li>Полный комплекс медицинских услуг</li>
+            </ul>
+            
+            <a href="tel:+78001234567" class="btn btn-accent">Позвонить для вызова врача</a>
+        </section>
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="logo">МедЦентр</div>
+            <ul class="footer-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="appointment.html">Запись</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+            <div class="copyright">
+                &copy; 2025 Медицинский центр. Все права защищены.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
